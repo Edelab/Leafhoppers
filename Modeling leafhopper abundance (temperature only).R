@@ -234,9 +234,24 @@ names(df)
   # Visualize the final model
   summary(b10.21)
 
+#The following lines were add in 05/12/2023
 
-  # Cleannig environnement
-  rm(list=setdiff(ls(), c("b10.21", "df")))  
+#R2 conditional and marginal
+library(performance)
+model_performance(b10.21)
+
+#AGVIF
+library(car)
+vif(b10.21)
+
+#model suitability DHARMa
+library(DHARMa)
+modsuit<- simulateResiduals(fittedModel = b10.21)
+testResiduals(modsuit)
+
+
+# Cleannig environnement
+rm(list=setdiff(ls(), c("b10.21", "df")))  
   
   
   
