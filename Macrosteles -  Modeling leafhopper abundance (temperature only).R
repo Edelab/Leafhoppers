@@ -274,6 +274,21 @@ summary(Mq.b10.12)
 #Selected model
 summary(Mq.mt.12)
 
+#The following lines were add in 05/12/2023
+
+#R2 conditional and marginal
+library(performance)
+model_performance(Mq.mt.12)
+
+#AGVIF
+library(car)
+vif(Mq.mt.12)
+
+#model suitability DHARMa
+library(DHARMa)
+modsuit<- simulateResiduals(fittedModel = Mq.mt.12)
+testResiduals(modsuit)
+
 
 # Cleannig environnement
 rm(list=setdiff(ls(), c("Mq.mt.12", "df.Mq")))  
