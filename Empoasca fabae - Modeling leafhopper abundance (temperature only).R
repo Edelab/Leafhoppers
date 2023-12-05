@@ -267,6 +267,20 @@ head(Ef.choix.BIC2)
 # The mt31 model is the best, but the others, with different temperatures, are similar. This can be explained by the fact that this is a migratory species. 
 summary(Ef.mt.31)
 
+#The following lines were add on 05/12/2023
+
+#R2 conditional and marginal
+library(performance)
+model_performance(Ef.mt.31)
+
+#AGVIF
+library(car)
+vif(Ef.mt.31)
+
+#model suitability DHARMa
+library(DHARMa)
+modsuit<- simulateResiduals(fittedModel = Ef.mt.31)
+testResiduals(modsuit)
 
 
 # Cleannig environnement
