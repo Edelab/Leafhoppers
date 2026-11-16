@@ -2,9 +2,6 @@
 
 # Pesticide with at least 4 applications was selected
 
-# Setwd
-setwd('C:/Users/JOJAC54/OneDrive - Université Laval/Jacques et al. 2026/Codes GitHub')
-
 # Libraries
 library(ggplot2)
 library(tidyr)
