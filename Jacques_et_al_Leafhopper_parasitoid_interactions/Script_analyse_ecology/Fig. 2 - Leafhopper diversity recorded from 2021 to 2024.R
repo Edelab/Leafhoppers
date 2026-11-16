@@ -1,8 +1,5 @@
 rm(list = ls())
 
-setwd('C:/Users/JOJAC54/OneDrive - Université Laval/Jacques et al. 2026/Codes GitHub')
-
-
 # Packages
 library(dplyr)
 library(tidyr)
