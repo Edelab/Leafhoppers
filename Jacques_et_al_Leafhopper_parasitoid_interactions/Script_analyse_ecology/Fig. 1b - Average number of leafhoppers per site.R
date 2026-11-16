@@ -1,9 +1,6 @@
 # Clear all objects from the global environment
 rm(list = ls())
 
-# Set the file path for the data
-setwd("C:/Users/Adminwork/OneDrive - Université Laval/Maîtrise/Analyses dans R/Analyses_finales")
-
 # Load the libraries
 #remotes::install_github("teunbrand/ggh4x") # Force the installation of an old package
 library(readxl)
