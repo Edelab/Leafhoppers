@@ -1,8 +1,5 @@
 rm(list = ls())
 
-setwd("C:/Users/Adminwork/OneDrive - Université Laval/Maîtrise/Analyses dans R/Analyses_finales")
-
-
 # library
 library(car)
 library(lme4)
